@@ -1,5 +1,7 @@
 package blog
 
 class MainController {
-	def scaffold = true;
+	def index(){
+		
+	}
 }

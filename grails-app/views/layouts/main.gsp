@@ -1,10 +1,46 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!-- Template -->
+<!-- Edits on this page determine the layout of the whole website-->
+<html>
+<head>
+<g:layoutHead/>
+</head>
+<body>
+<g:layoutBody/>
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 		<!-- ANDREW THIS IS ALL COMMENTED OUT USE FOR REFERENCE -->
+ 
+ 
+ 
+ 
+<!--<!DOCTYPE html>-->
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
-	<head>
+<!--<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><g:layoutTitle default="Grails"/></title>
@@ -23,3 +59,4 @@
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 	</body>
 </html>
+ -->
