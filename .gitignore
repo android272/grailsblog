@@ -9,7 +9,7 @@
 # general HSQL database files
 *Db.properties
 *Db.script
-devDb.* 
+devDb.*
 
 # logs
 /stacktrace.log
