@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
-<!-- Template -->
-<!-- Edits on this page determine the layout of the whole website-->
+
 <html>
 <head>
 <g:layoutHead/>
