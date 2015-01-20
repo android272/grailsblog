@@ -5,6 +5,9 @@ class User {
 	String firstName;
 	String lastName;
 	String password;
+	String toString(){
+		userName;
+	}
 	
     static constraints = {
     }

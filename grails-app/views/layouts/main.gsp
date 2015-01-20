@@ -44,7 +44,7 @@
        		<button type="submit" class="btn btn-default">Submit</button>
       	</form>
       	<ul class="nav navbar-nav navbar-right">
-        	<li><a href="../blog/newPost">New Post</a></li>
+        	<li><a href="../blog/post/newPost">New Post</a></li>
         	<li><a href="../blog/Login">Login</a></li>
       	</ul>
    	</div>

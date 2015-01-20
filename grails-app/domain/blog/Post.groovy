@@ -3,9 +3,11 @@ package blog
 class Post {
 	String title;
 	String author;
-	Date postDate;
+	Date date;
 	
-	
+	String toString(){
+		title;
+	}
     static constraints = {
     }
 }

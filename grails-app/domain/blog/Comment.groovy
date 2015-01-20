@@ -1,13 +1,17 @@
 package blog
 
 class Comment {
-	String title;
-	String author;
+
 	Date date;
-	static belongsTo = [post:Post];
-    static constraints = {
-    }
+	String title;
+	String comment;
 	String toString() {
 		title;
+	}
+	
+	static belongsTo = [post:Post,author:User];
+	
+	static contstaints(){
+		
 	}
 }
