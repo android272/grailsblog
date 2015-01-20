@@ -29,3 +29,5 @@ devDb.*
 
 # "temporary" build files
 /target
+
+.project
