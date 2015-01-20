@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
-<!-- Templet for main page -->
 <html>
-<head><meta name= "layout" content="newPost"/></head>
+<head><meta name= "layout" content="main.gsp"/></head>
 <body>
 	<div class="panel panel-default">
 		<div class="panel-body">
