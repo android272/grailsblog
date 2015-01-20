@@ -1,6 +1,6 @@
 package blog
 
-class NewPostController {
+class UserController {
 
     def index() { }
 }

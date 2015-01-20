@@ -6,8 +6,8 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions
  */
-@TestFor(PostController)
-class NewPostControllerSpec extends Specification {
+@TestFor(CommentController)
+class CommentControllerSpec extends Specification {
 
     def setup() {
     }
