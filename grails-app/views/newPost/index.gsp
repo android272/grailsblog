@@ -1,6 +1,13 @@
 <!DOCTYPE HTML>
 <html>
+<<<<<<< Updated upstream
 <head><meta name= "layout" content="main.gsp"/></head>
+=======
+<head>	
+
+<meta name="layout" content="main.gsp"/>
+</head>
+>>>>>>> Stashed changes
 <body>
 	<div class="panel panel-default">
 		<div class="panel-body">
