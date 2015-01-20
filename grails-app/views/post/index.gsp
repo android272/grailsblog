@@ -12,7 +12,7 @@
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<form>
-				<fieldset disabled>
+				<fieldset>
 					<div class="form-group">
 						<input type="text" id="disabledTextInput" class="form-control" placeholder="Click to add Title">
 					</div>
