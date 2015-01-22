@@ -39,8 +39,8 @@
 <div class="container">
 <g:layoutBody/>
 </div>
-<asset:javascript src="bootstrap.min.js"/>
 <asset:javascript src="jquery.js"/>
+<asset:javascript src="bootstrap.min.js"/>
 </body>
 </html>
  

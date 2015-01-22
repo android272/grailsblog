@@ -2,12 +2,18 @@ package blog
 
 class Post {
 	String title;
-	String author;
+	String post;
+	
 	Date date;
 	
 	String toString(){
 		title;
 	}
+	
+	static mapping = {
+		post type: "text"
+	}
+		
     static constraints = {
     }
 }
