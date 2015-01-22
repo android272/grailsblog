@@ -10,6 +10,7 @@
     <![endif]-->
 </head>
 <body>
+	
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 		    <div class="navbar-header">
@@ -30,8 +31,15 @@
        		<button type="submit" class="btn btn-default">Submit</button>
       	</form>
       	<ul class="nav navbar-nav navbar-right">
+			<g:if test="${session.user}">
+        	<li><a href="/blog/user/userHome">Hello, ${session.user}!</a></li>
         	<li><a href="/blog/post/newPost">New Post</a></li>
-        	<li><a href="/blog/login/login">Login</a></li>
+        	<li><a href="/blog/user/doLogout">Logout</a></li>
+			</g:if>
+			<g:else>
+			<li><a href="/blog/user/doSignUp">SignUp</a></li>
+        	<li><a href="/blog/user/login">Login</a></li>
+        	</g:else>
       	</ul>
    	</div>
   	</div>
@@ -43,6 +51,22 @@
 <asset:javascript src="bootstrap.min.js"/>
 </body>
 </html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

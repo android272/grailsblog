@@ -1,16 +1,16 @@
 package blog
 
 class User {
-	String email;
+	String userName;
 	String firstName;
 	String lastName;
 	String password;
 	String toString(){
-		email;
+		userName;
 	}
 	
     static constraints = {
-		email(email:true)
+		userName(userName:true)
 		password(blank:false,password:true)
     }
 }

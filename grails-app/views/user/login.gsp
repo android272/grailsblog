@@ -2,19 +2,20 @@
 <html>
 <head><meta name= "layout" content="main.gsp"/></head>
 <body>
+	${flash.message}
 	<div class="panel panel-default">
 		<div class="panel-body">
-			<form class="form-horizontal">
+			<g:form class="form-horizontal" controller="user" action="doLogin">
   				<div class="form-group">
-    				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    				<label for="inputUser3" class="col-sm-2 control-label">Username</label>
     				<div class="col-sm-10">
-      					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      					<input name="username" type="text" class="form-control" id="inputUser3" placeholder="User">
    					</div>
   				</div>
   				<div class="form-group">
     				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
 					<div class="col-sm-10">
-      					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      					<input name="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
    					</div>
 				</div>
 				<div class="form-group">
@@ -31,7 +32,7 @@
 						<button type="submit" class="btn btn-default">Sign in</button>
 					</div>
 				</div>
-			</form>
+			</g:form>
 		</div>
 	</div>
 </body>
