@@ -16,7 +16,11 @@ class UserController {
 				flash.message = "login failed"
 				redirect(controller:"user",action:"login")
 			}
-		}	
+			
+		}else{
+				flash.message = "login failed"
+				redirect(controller:"user",action:"login")
+		}
 	}
 	
 	def doLogout = {

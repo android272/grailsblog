@@ -5,9 +5,9 @@
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<div class="page-header">
-				<h1>${title}<small>${date}</small></h1>
+				<h1><small></small></h1>
 			</div>
-			<p>${post}</p>
+			${post.post}
 		</div>
 	</div>
 </body>

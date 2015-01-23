@@ -4,7 +4,7 @@ class Post {
 	String title;
 	String post;
 	
-	Date date;
+	/*Date date;*/
 	
 	String toString(){
 		title;
