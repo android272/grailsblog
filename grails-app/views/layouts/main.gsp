@@ -10,6 +10,10 @@
     <![endif]-->
 </head>
 <body>
+
+<g:each in="${users }" var="user">
+  <div>user</div>
+</g:each>
 	
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">

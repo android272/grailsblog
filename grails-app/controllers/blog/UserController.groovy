@@ -7,14 +7,16 @@ class UserController {
 	def login = {}
 	
 	def doLogin = { 
-			User user = User() 
-			if(params.username == "admin" && params.password == "password"){
-			redirect(controller:"main", action:"index")
-			session.user = "admin"
-    		}else{
-			flash.message = "login failed"
-			redirect(controller:"user",action:"login")
-    		}
+		User user = User.findByUserName(params.username)
+		if(user!=null){
+			if(params.password == user.password){
+				session.user = user
+				redirect(controller:"main", action:"index")
+			}else{
+				flash.message = "login failed"
+				redirect(controller:"user",action:"login")
+			}
+		}	
 	}
 	
 	def doLogout = {
@@ -26,14 +28,22 @@ class UserController {
 	
 	def doSignUp = {
 		redirect(controller:"user",action:"signup")
-	}
+    }
 	
 	def createNewUser = {
-		User user = new User(username:params.username,password:params.password,firstName:params.firstName,lastName:params.lastName).save()
+		println(params.lastName)
+		User user = new User(
+			userName:params.username,
+			password:params.password,
+			firstName:params.firstName,
+			lastName:params.lastName
+			).save(failOnError:true);
+		
+		println(params)
+		println(user)
+		session.user = user
+		redirect(controller:"main",action:"index")
+	
 	}
 }
-
-	
-	
-
 
