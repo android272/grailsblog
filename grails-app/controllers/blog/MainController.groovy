@@ -2,6 +2,6 @@ package blog
 
 class MainController {
 	def index(){
-		request.users=User.list()
+		request.allPosts = BlogPost.list(max: 10, sort: "date", order: "desc")
 	}
 }

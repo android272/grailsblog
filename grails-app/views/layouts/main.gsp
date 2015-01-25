@@ -31,7 +31,7 @@
 		      	<ul class="nav navbar-nav navbar-right">
 					<g:if test="${session.user}">
 		        	<li><a href="/blog/user/userHome">Hello, ${session.user}!</a></li>
-		        	<li><a href="/blog/post/newPost">New Post</a></li>
+		        	<li><a href="/blog/blogPost/newPost">New Post</a></li>
 		        	<li><a href="/blog/user/doLogout">Logout</a></li>
 					</g:if>
 					<g:else>

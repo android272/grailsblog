@@ -35,16 +35,12 @@ class UserController {
     }
 	
 	def createNewUser = {
-		println(params.lastName)
 		User user = new User(
 			userName:params.username,
 			password:params.password,
 			firstName:params.firstName,
 			lastName:params.lastName
 			).save(failOnError:true);
-		
-		println(params)
-		println(user)
 		session.user = user
 		redirect(controller:"main",action:"index")
 	

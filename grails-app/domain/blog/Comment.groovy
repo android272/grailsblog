@@ -9,7 +9,7 @@ class Comment {
 		title;
 	}
 	
-	static belongsTo = [post:Post,author:User];
+	static belongsTo = [post:BlogPost,author:User];
 	
 	static contstaints(){
 		
