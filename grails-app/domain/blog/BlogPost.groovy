@@ -13,4 +13,8 @@ class BlogPost {
     static constraints = {
 		
     }
+	
+	static mapping = {
+		post type: "text"
+    }
 }

@@ -6,13 +6,11 @@ class BlogPostController {
 	}
 	
 	def showPost = {
-		println("Creating Object")
-		BlogPost blogpost = new BlogPost(title:params.title,post:params.post,date:new Date()).save()
-		if(blogpost == null){
-			println("Creation Failed!")
-		}
-		request.blogpost = blogpost
-		
+		request.blogpost = BlogPost.get(params.id)
+	}
+	def writePost = {
+		BlogPost blogpost = new BlogPost(title:params.title,post:params.post,date:new Date()).save(failOnError:true)
+		redirect(action:"showPost", params:[id:blogpost.id])
 	}
 	
 	def postList = {

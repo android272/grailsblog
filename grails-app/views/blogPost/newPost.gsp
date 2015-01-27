@@ -4,7 +4,7 @@
 <body>
 	<div class="panel panel-default">
 		<div class="panel-body">
-			<g:form controller="blogPost" action="showPost">
+			<g:form controller="blogPost" action="writePost">
 				<fieldset>
 					<div class="form-group">
 						<input name="title" type="text" id="disabledTextInput" class="form-control" placeholder="Click to add Title">

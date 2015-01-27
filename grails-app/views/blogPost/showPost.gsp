@@ -11,6 +11,7 @@
 			</div>
 				${blogpost.post}
 		<div>
+		
 	<div>
 </body>
 </html>
