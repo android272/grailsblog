@@ -1,9 +1,8 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head><meta name= "layout" content="main"/></head>
 <body>
-${blog.BlogPost.count()}<br/>
-<g:each in="${allPosts}" var="posting">
+<g:each in="${results}" var="posting">
 	<div class="panel panel-default">
 		<div class="panel-body">
 		<div class="page-header">

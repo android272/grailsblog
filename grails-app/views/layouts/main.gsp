@@ -22,9 +22,9 @@
 		      	<a class="navbar-brand" href="/blog">myBlog</a>
 		    </div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<form class="navbar-form navbar-left" role="search">
+				<form class="navbar-form navbar-left" role="search" action="/blog/BlogPost/searchResults">
 			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Search">
+			          <input name="search" type="text" class="form-control" placeholder="Search">
 			        </div>
         			<button type="submit" class="btn btn-default">Submit</button>
       			</form>
