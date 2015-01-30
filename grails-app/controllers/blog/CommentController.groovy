@@ -1,6 +1,8 @@
 package blog
 
 class CommentController {
-
-    def index() { }
+    def writeComment = {
+		Comment comment = new Comment(title:params.title,comment:params.comment,date:new Date()).save(failOnError:true)
+		//redirect(action:"showPost", params:[id:blogpost.id])
+	}
 }
