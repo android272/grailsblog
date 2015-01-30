@@ -12,17 +12,19 @@
 				<pre>${blogpost.post}</pre>
 			</li>
 			<li class="list-group-item">
-				<g:form controller="Comment" action="writeComment">
+				<!--<g:form controller="Comment" action="writeComment">-->
+				<form action="#" onsubmit="return submitAjaxComment(event)">
 					<fieldset>
 						<div class="form-group">
-							<input name="author" type="text" id="disabledTextInput" class="form-control well" placeholder="Name" value="Anom">
+							<input name="author" type="text" id="disabledTextInput" class="form-control well" placeholder="Name" value="Anonymous">
 						</div>
 			    		<div class="form-group">
 			      			<textarea name="comment" class="form-control col-lg-12 well" rows="5"></textarea>
 			    		</div>
 			    		<button type="submit" class="btn btn-primary">Submit</button>
 			  		</fieldset>
-				</g:form>
+			  		</form>
+				<!--</g:form>-->
 			</li>
 		</ul>
 	<div>	

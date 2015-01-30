@@ -2,7 +2,13 @@
 <html>
 <head><meta name= "layout" content="main.gsp"/></head>
 <body>
-	${flash.message}
+	<g:if test="${flash.message}">
+		<div class="alert alert-danger" role="alert">
+			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  			<span class="sr-only">Error:</span>
+				${flash.message}
+		</div>
+	</g:if>
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<g:form class="form-horizontal" controller="user" action="doLogin">
