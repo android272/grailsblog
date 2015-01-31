@@ -9,6 +9,8 @@ class BlogPost {
 		title;
 		post;
 	}
+	
+	static belongsTo = [category:Category]
 		
     static constraints = {
 		
