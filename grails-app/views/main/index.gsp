@@ -7,7 +7,8 @@ ${blog.BlogPost.count()}<br/>
 	<div class="panel panel-default">
 		<div class="panel-body">
 		<div class="page-header">
-			<h1><a href="/blog/blogPost/showPost/${posting.id}">${posting.title}</a><small class="pull-right">${posting.date}</small></h1>
+			<h1><g:link mapping="blog" params="[title:posting.title]">
+			${posting.title}<small class="pull-right">${posting.date}</small></g:link></h1>
 		</div>
 			${posting.post}
 		</div>

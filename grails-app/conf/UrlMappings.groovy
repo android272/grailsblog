@@ -10,9 +10,9 @@ class UrlMappings {
         "500"(view:'/error')
 		
 		}
-		name blog: "/blog/$id/$category?/$title?"{
-        	controller = "blog"
-        			action = "showPost"
+		name blog: "/BlogPost/showPost/$title?"{
+        controller = "BlogPost"
+        action = "showPost"
         }
 	}
 }
