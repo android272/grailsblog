@@ -1,45 +1,16 @@
-function crossDomainCall(url,data,fnSuccess,fnError){
-    $.ajax({
-        type:'POST',
-        url:url,
-        contentType:"application/json",
-        dataType:'jsonp',
-        crossDomain:true,
-        data:data,
-        success:fnSuccess,
-        error: fnError
-    });
-}
- 
-function authenticateUser(username, password) {
-    var url = 'blog/blogPost/showPost/';
-    var data={};
-    var fnSuccess=function (dataReceived) {
-    if(dataReceived) {
-        alert("Welcome "+dataReceived.name);
-    }else{
-        alert("Authentication failed")
-    }
-    };
- 
-    var fnError=function (e) {
-        alert(e);
-    };
-    crossDomainCall(url,data,fnSuccess,fnError);
-}
-
 function submitAjaxComment(event) {
 	var author=event.target.elements.author.value;
 	var comment=event.target.elements.comment.value;
-	var url="/CONTROLLER/ACTION";
+	var url="/CinnebtControler/writeComment";
 	var formData="author="+encodeURIComponent(author)+"&comment="+encodeURIComponent(comment);
 	console.log("READY TO AJAX TO URL: "+url);
 	
 	$.ajax({
 		type:"POST",
 		url:url,
-		contentType:
+		contentType:application/x-www-form-urlencoded; charset=UTF-8,
 		data:formData,
+		dataType:'text',
 		success:function(event){
 			console.log("AJAX SUCCESS");
 			console.dir(event);
@@ -51,3 +22,14 @@ function submitAjaxComment(event) {
 	
 	return false;
 }
+
+/*
+$("#searchButton").click(GoogleBooks.search) 
+
+$(document).on("keypress", function(event) {
+	if (event.which == 13) {
+		GoogleBooks.search();
+		event.preventDefault();
+	}
+});
+ */

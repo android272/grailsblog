@@ -3,20 +3,15 @@
 <head>
 <meta name="layout" content="main.gsp"/>
 <asset:javascript src="comment.js"/>
-<g:link mapping="blog"
-params="[id:blogpost.id,category:blogpost.category,title:blogpost.title]">
-${blogpost.title}
-</g:link>
 </head>
 <body>
 	<div class="panel panel-default">
 		<ul class="list-group">
 			<li class="list-group-item">
-				<h1>${blogpost.title}<small> ${blogpost.date}</small></h1>
+				<h1>${blogpost.title}<small class="pull-right">${blogpost.date}</small></h1>
 				<pre>${blogpost.post}</pre>
 			</li>
 			<li class="list-group-item">
-				<!--<g:form controller="Comment" action="writeComment">-->
 				<form action="#" onsubmit="return submitAjaxComment(event)">
 					<fieldset>
 						<div class="form-group">
@@ -27,10 +22,9 @@ ${blogpost.title}
 			    		</div>
 			    		<button type="submit" class="btn btn-primary">Submit</button>
 			  		</fieldset>
-			  		</form>
-				<!--</g:form>-->
+			  	</form>
 			</li>
-		</ul>
+		</ul>		
 	<div>	
 </body>
 </html>
