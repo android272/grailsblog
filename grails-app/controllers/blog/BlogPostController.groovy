@@ -4,7 +4,12 @@ class BlogPostController {
 	def newPost = { }
 	
 	def showPost = {
-		request.blogpost = BlogPost.get(params.id)
+		request.blogpost = BlogPost.findByTitle(params.title)
+		if(request.blogpost == null){
+			redirect(error:404)
+			return
+		}
+		println(params)
 	}
 	
 	def writePost = {

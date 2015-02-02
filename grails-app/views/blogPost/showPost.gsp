@@ -3,10 +3,6 @@
 <head>
 <meta name="layout" content="main.gsp"/>
 <asset:javascript src="comment.js"/>
-<g:link mapping="blog"
-params="[id:blogpost.id,category:blogpost.category,title:blogpost.title]">
-${blogpost.title}
-</g:link>
 </head>
 <body>
 	<div class="panel panel-default">
