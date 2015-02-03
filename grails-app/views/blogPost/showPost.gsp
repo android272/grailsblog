@@ -12,7 +12,7 @@
 				<pre>${blogpost.post}</pre>
 			</li>
 			<li class="list-group-item">
-				<form action="#" onsubmit="return submitAjaxComment(event)">
+				<form action="#" onsubmit="event.preventDefault();submitAjaxComment(event);">
 					<fieldset>
 						<div class="form-group">
 							<input name="author" type="text" id="disabledTextInput" class="form-control well" placeholder="Name" value="Anonymous">
@@ -24,6 +24,22 @@
 			  		</fieldset>
 			  	</form>
 			</li>
+			<li class="list-group-item">
+				<p>Number of comments: ${blog.Comment.count()}</p>
+			</li>
+			
+			
+			<g:each in="${allPosts}" var="posting">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<div class="page-header">
+						<h1><g:link mapping="blog" params="[title:posting.title]">
+						${posting.title}<small class="pull-right">${posting.date}</small></g:link></h1>
+					</div>
+						${posting.post}
+					</div>
+				</div>
+			</g:each>
 		</ul>		
 	<div>	
 </body>
