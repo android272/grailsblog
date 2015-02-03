@@ -3,6 +3,7 @@
 <html>
 <head>
 	<asset:stylesheet src="bootstrap.min.css"/>
+	<asset:stylesheet src="bootstrap-theme.min.css"/>
 	<g:layoutHead/>
 	<!-- HTML 5 shim for IE backwards compatibility -->
     <!--[if lt IE 9]>
