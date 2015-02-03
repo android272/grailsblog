@@ -25,6 +25,8 @@ class BlogPostController {
 		def args = new Object[2];
 		args[0]="%${params.search}%";
 		args[1]="%${params.search}%";
-		request.results = BlogPost.findAllByPostIlikeOrTitleIlike(args);		
+		if (args != null) {
+			request.results = BlogPost.findAllByPostIlikeOrTitleIlike(args);
+		}		
 	}
 }
